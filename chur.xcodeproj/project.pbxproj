@@ -14,6 +14,13 @@
 		439D91B8295A215F00F27B7D /* churTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D91B7295A215F00F27B7D /* churTests.swift */; };
 		439D91C2295A215F00F27B7D /* churUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D91C1295A215F00F27B7D /* churUITests.swift */; };
 		439D91C4295A215F00F27B7D /* churUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D91C3295A215F00F27B7D /* churUITestsLaunchTests.swift */; };
+		439D91D6295A367300F27B7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D91D5295A367300F27B7D /* LoginView.swift */; };
+		439D91D9295A3F4E00F27B7D /* SwiftUIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D91D8295A3F4E00F27B7D /* SwiftUIHelpers.swift */; };
+		439D91E5295A500200F27B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D91E4295A500200F27B7D /* AppDelegate.swift */; };
+		43C2B6D3295B8A750083085B /* AwaitingChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B6D2295B8A750083085B /* AwaitingChallengeView.swift */; };
+		43C2B6D9295B93820083085B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B6D8295B93820083085B /* CardView.swift */; };
+		43C2B6DC295BA8640083085B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B6DB295BA8640083085B /* ButtonView.swift */; };
+		43C2B6DE295BAE580083085B /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B6DD295BAE580083085B /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,15 @@
 		439D91BD295A215F00F27B7D /* churUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = churUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		439D91C1295A215F00F27B7D /* churUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = churUITests.swift; sourceTree = "<group>"; };
 		439D91C3295A215F00F27B7D /* churUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = churUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		439D91D5295A367300F27B7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		439D91D8295A3F4E00F27B7D /* SwiftUIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHelpers.swift; sourceTree = "<group>"; };
+		439D91E2295A4D2A00F27B7D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		439D91E3295A4FC300F27B7D /* chur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = chur.entitlements; sourceTree = "<group>"; };
+		439D91E4295A500200F27B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43C2B6D2295B8A750083085B /* AwaitingChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwaitingChallengeView.swift; sourceTree = "<group>"; };
+		43C2B6D8295B93820083085B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		43C2B6DB295BA8640083085B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		43C2B6DD295BAE580083085B /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,14 @@
 		439D91A5295A215E00F27B7D /* chur */ = {
 			isa = PBXGroup;
 			children = (
+				43C2B6D1295B89FC0083085B /* Views */,
+				439D91E3295A4FC300F27B7D /* chur.entitlements */,
+				439D91D7295A3F2900F27B7D /* utilies */,
 				439D91A6295A215E00F27B7D /* churApp.swift */,
-				439D91A8295A215E00F27B7D /* ContentView.swift */,
 				439D91AA295A215F00F27B7D /* Assets.xcassets */,
 				439D91AC295A215F00F27B7D /* Preview Content */,
+				439D91E2295A4D2A00F27B7D /* MyPlayground.playground */,
+				439D91E4295A500200F27B7D /* AppDelegate.swift */,
 			);
 			path = chur;
 			sourceTree = "<group>";
@@ -125,6 +145,59 @@
 				439D91C3295A215F00F27B7D /* churUITestsLaunchTests.swift */,
 			);
 			path = churUITests;
+			sourceTree = "<group>";
+		};
+		439D91D7295A3F2900F27B7D /* utilies */ = {
+			isa = PBXGroup;
+			children = (
+				439D91D8295A3F4E00F27B7D /* SwiftUIHelpers.swift */,
+			);
+			path = utilies;
+			sourceTree = "<group>";
+		};
+		43C2B6D1295B89FC0083085B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43C2B6D5295B8A860083085B /* Auth */,
+				43C2B6D4295B8A790083085B /* Main */,
+				439D91A8295A215E00F27B7D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43C2B6D4295B8A790083085B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				43C2B6DA295BA80B0083085B /* ButtonComponent */,
+				43C2B6D7295B93480083085B /* CardComponent */,
+				43C2B6D2295B8A750083085B /* AwaitingChallengeView.swift */,
+				43C2B6DD295BAE580083085B /* Feed.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		43C2B6D5295B8A860083085B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				439D91D5295A367300F27B7D /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		43C2B6D7295B93480083085B /* CardComponent */ = {
+			isa = PBXGroup;
+			children = (
+				43C2B6D8295B93820083085B /* CardView.swift */,
+			);
+			path = CardComponent;
+			sourceTree = "<group>";
+		};
+		43C2B6DA295BA80B0083085B /* ButtonComponent */ = {
+			isa = PBXGroup;
+			children = (
+				43C2B6DB295BA8640083085B /* ButtonView.swift */,
+			);
+			path = ButtonComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C2B6D9295B93820083085B /* CardView.swift in Sources */,
+				43C2B6DE295BAE580083085B /* Feed.swift in Sources */,
+				43C2B6D3295B8A750083085B /* AwaitingChallengeView.swift in Sources */,
+				43C2B6DC295BA8640083085B /* ButtonView.swift in Sources */,
+				439D91D6295A367300F27B7D /* LoginView.swift in Sources */,
+				439D91D9295A3F4E00F27B7D /* SwiftUIHelpers.swift in Sources */,
 				439D91A9295A215E00F27B7D /* ContentView.swift in Sources */,
+				439D91E5295A500200F27B7D /* AppDelegate.swift in Sources */,
 				439D91A7295A215E00F27B7D /* churApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,15 +494,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = chur/chur.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chur/Preview Content\"";
-				DEVELOPMENT_TEAM = 63Q7XQB5UR;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chur/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,15 +525,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = chur/chur.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chur/Preview Content\"";
-				DEVELOPMENT_TEAM = 63Q7XQB5UR;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chur/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
